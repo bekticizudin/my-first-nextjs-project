@@ -5,12 +5,6 @@ const Pagination: React.FC = () => {
   const { currentPage, totalUsers, setCurrentPage, users } = useContext(UserContext);
   const totalPages = Math.ceil(totalUsers.length / 5);
 
-  const [searchResults, setSearchResults] = useState(false);
-
-  useEffect(() => {
-    setSearchResults(users.length > 0);
-  } );
-
   const handlePageChange = (page: number) => {
     setCurrentPage(page);
   };
