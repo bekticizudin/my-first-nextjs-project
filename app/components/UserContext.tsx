@@ -69,7 +69,7 @@ export const UserProvider: React.FC<UserProviderProps> = ({ children }) => {
   };
 
   const searchByCity = (city: string) => {
-    const filteredUsers = totalUsers.filter((user) => user.address.city.toLowerCase().includes(city.toLowerCase())
+    const filteredUsers = totalUsers.filter((user) => user.address.city.toLowerCase().startsWith(city.trim().toLowerCase())
     );
     setUsers(filteredUsers);
     setCurrentPage(1);
