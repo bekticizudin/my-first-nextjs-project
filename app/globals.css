@@ -51,6 +51,7 @@ table tr:nth-child(even) {
 
 table td {
   padding: 10px;
+  color: black;
 }
 
 
