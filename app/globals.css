@@ -87,3 +87,7 @@ input[type='text'] {
 input[type='text']:focus {
   border-color: #007bff; 
 }
+
+.loadingText {
+  font-size: 25px;
+}

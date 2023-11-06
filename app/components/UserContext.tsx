@@ -81,7 +81,7 @@ export const UserProvider: React.FC<UserProviderProps> = ({ children }) => {
   const currentUsers = users.slice(indexOfFirstUser, indexOfLastUser);
 
   if (loading) {
-    return <div className='text-center'>Loading...</div>;
+    return <div className='text-center loadingText'>Loading...</div>;
   }
 
   if (error) {
