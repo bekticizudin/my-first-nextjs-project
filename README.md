@@ -20,6 +20,22 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
+**Features**
+
+**Search by City**
+Enter a city name in the search input field to filter users based on their city. The search is not case-sensitive.
+
+**Sort Users**
+Click the "Sort" button in the user table to sort users alphabetically by their names.
+
+**Pagination**
+Navigate through paginated results using the page number buttons. Five users are displayed per page.
+
+**Additional Notes**
+The application uses React's Context API to manage user data.
+Initial user data is fetched from the JSONPlaceholder API. An active internet connection is necessary to load the initial user data.
+The application is designed to be responsive and adaptable to various screen sizes.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
